@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myles Edwin – Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myles Edwin – Photography</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
   <style>
     * {
@@ -11,122 +11,60 @@
     }
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
       background-color: #000;
       color: #fff;
-      line-height: 1.6;
+      font-family: 'Roboto', sans-serif;
     }
     header {
-      background-color: #111;
       padding: 2rem;
       text-align: center;
-      border-bottom: 1px solid #444;
+      background-color: #111;
+      border-bottom: 1px solid #333;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin: 0;
-      color: #fff;
       letter-spacing: 2px;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-top: 0.5rem;
-    }
-    section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5rem;
-      text-align: center;
-    }
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
     }
     .gallery img {
-      max-width: 100%;
-      width: 400px;
+      width: 100%;
       border: 3px solid #fff;
-      box-shadow: 0 0 20px #444;
+      box-shadow: 0 0 20px #222;
       transition: transform 0.3s ease;
     }
     .gallery img:hover {
       transform: scale(1.02);
     }
-    .project {
-      margin-bottom: 2rem;
-    }
-    .project h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.3rem;
-      color: #eee;
-    }
-    .project p {
-      color: #bbb;
-    }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      border-top: 1px solid #444;
-      font-size: 0.9rem;
+      padding: 2rem;
       color: #888;
-    }
-    a {
-      color: #fff;
-      text-decoration: underline;
-    }
-    a:hover {
-      color: #aaa;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Myles Edwin</h1>
-    <p>Creative projects, side hustles, and collaborative ideas</p>
   </header>
 
-  <section>
-    <h2>Photography</h2>
-    <div class="gallery">
-      <img src="https://raw.githubusercontent.com/TrueRunnner/mylesedwin-portfolio/main/images/IMG_7486.jpeg" alt="Photo 1">
-      <img src="https://raw.githubusercontent.com/TrueRunnner/mylesedwin-portfolio/main/images/IMG_8190.jpeg" alt="Photo 2">
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Stage Front Radio</h3>
-      <p>A monthly podcast spotlighting emerging musicians and underground scenes. Available on Spotify and Apple Podcasts.</p>
-    </div>
-    <div class="project">
-      <h3>RepairQuote</h3>
-      <p>An app that helps you determine if you're being overcharged at the auto repair shop.</p>
-    </div>
-    <div class="project">
-      <h3>The Wallies</h3>
-      <p>My former band—still kicking around tracks and planning a reunion set. Check out our music on <a href="#">Bandcamp</a>.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Have a project in mind? Reach out at <a href="mailto:hello@mylesedwin.com">hello@mylesedwin.com</a>.</p>
-  </section>
+  <div class="gallery">
+    <img src="https://raw.githubusercontent.com/TrueRunnner/mylesedwin-portfolio/main/images/IMG_7486.jpeg" alt="Portfolio Image 1">
+    <img src="https://raw.githubusercontent.com/TrueRunnner/mylesedwin-portfolio/main/images/IMG_8190.jpeg" alt="Portfolio Image 2">
+  </div>
 
   <footer>
-    &copy; 2025 Myles Edwin. All rights reserved.
+    &copy; 2025 Myles Edwin
   </footer>
 </body>
 </html>
